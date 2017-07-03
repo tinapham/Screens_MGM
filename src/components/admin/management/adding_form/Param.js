@@ -1,12 +1,10 @@
 import React, { Component } from 'react';
+import Param from './Param.js';
 
-class ParamsAddingForm extends Component {
-
-	render() {
-		let params = [];
-		for (var i = 0; i < this.props.numberOfParams; i++) {
-			params.push(
-				<div className="line">
+class Param extends Component {
+    render() {
+        return(
+            <div className="line">
 				<form className="form-horizontal">
 					<div className="form-group">
 						<label className="control-label col-md-2">Key:</label>
@@ -22,11 +20,8 @@ class ParamsAddingForm extends Component {
 					</div>
 				</form>
 			</div>
-			);
-		}
-		return params;
-	}
-
+        );
+    }
 }
 
-export default ParamsAddingForm;
+export default Param;

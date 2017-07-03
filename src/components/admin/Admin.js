@@ -1,7 +1,7 @@
 import React, { Component }  from 'react';
 import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 import AdminManagement from './management/AdminManagement.js';
-import ScreenPlayAddingForm from './management/ScreenPlayAddingForm.js';
+import ScreenPlayAddingForm from './management/adding_form/ScreenPlayAddingForm.js';
 
 
 class Admin extends Component {
